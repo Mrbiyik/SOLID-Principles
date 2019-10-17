@@ -8,7 +8,7 @@ by Uncle BOB!
   
   Cohesion: Degree of focusing to one thing within module.
   Coupling: Degree of connection between modules.
-
+```
 public class Person{
 
     pushTheSofa();
@@ -22,9 +22,9 @@ public class Person{
     
 
 }
-
+```
 In the above there are 8 methods which are about 4 different objects. According to the SRP, if we want to change anything in this class, we have 4 reasons. Because of sofa, because of door, because of lights and because of TV.
-
+```
 public class Sofa{
 
   pullTheSofa(); 
@@ -62,11 +62,13 @@ public class Person{
     Tv.closeTV();
   
 }
+```
 
 Why I can't increase the cohesion anymore in the first 4 classes?
   
   In my opinion(it can be true or false), imagine a method like :
   
+  ```
   public class Sofa{
   
     operation(String state){
@@ -88,7 +90,7 @@ Why I can't increase the cohesion anymore in the first 4 classes?
   
   
   }
-  
+  ```
   *So, pullTheSofa and pushTheSofa methods are the focused way of operation method.
   
   ## Open Close Principle
