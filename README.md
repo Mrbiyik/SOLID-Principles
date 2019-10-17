@@ -26,20 +26,29 @@ public class Person{
 In the above there are 8 methods which are about 4 different objects. According to the SRP, if we want to change anything in this class, we have 4 reasons. Because of sofa, because of door, because of lights and because of TV.
 
 public class Sofa{
+
   pullTheSofa(); 
   pushTheSofa();
+  
 }
+
 public class Door{
+
   closeTheDoor();
   openTheDoor();
+  
 }
 public class Lights{
+
   closeTheLights();
   openTheLights();
+  
 }
 public class Tv{
+
   openTV();
   closeTV();
+  
 }
 public class Person{
   
