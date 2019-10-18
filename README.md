@@ -91,7 +91,7 @@ Why I can't increase the cohesion anymore in the first 4 classes?
   
   }
   ```
-  *So, pullTheSofa and pushTheSofa methods are the focused way of operation method.
+  **So, pullTheSofa and pushTheSofa methods are the focused way of operation method.
   
   ## Open Close Principle
   
