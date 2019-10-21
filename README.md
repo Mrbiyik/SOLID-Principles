@@ -173,9 +173,9 @@ Why I can't increase the cohesion anymore in the first 4 classes?
   
   Also, there will be future consequences of this situation.
   
-  When you are using phone objects and its functions you should control the model1990. It means this violated both OCP and SRP.
+  When you are using phone objects and its functions, you should control(if-else) the model1990. It means, it violates both OCP and SRP.
   
-  Because there will be modification and multiple responsibilities.
+  Because there will be modification(for other old models) and multiple responsibilities(for the function which uses these methods).
   
   How can we solve this situation?
   
@@ -186,13 +186,28 @@ Why I can't increase the cohesion anymore in the first 4 classes?
   By this way we achieved separation of objects.
   
   ```
-  List<ICall> allPhones;
-  List<ITakePicture> newPhones;
+  List<ICall> callPhones;
+  List<ITakePicture> cameraPhones;
   .
   .
   .
   ```
   
+  OR
+  We can delete takePicture function from phone class and add it to "class cameraPhone extends phone", then modelX will extend             cameraPhone and model1999 will extend phone class.
+  
+  ```
+  List<Phone> callPhones;
+  List<cameraPhone> cameraPhones;
+  .
+  .
+  .
+  ```
+  In eclipse you won't see the take picture method in the situation below: 
+  ```
+  phone a = new model1999();
+  a.
+  ```
   
   
   
