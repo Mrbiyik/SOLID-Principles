@@ -203,7 +203,7 @@ Why I can't increase the cohesion anymore in the first 4 classes?
   .
   .
   ```
-  In eclipse you won't see the take picture method in the situation below: 
+  In eclipse you won't see the takePicture method(in both ways) in the situation below: 
   ```
   phone a = new model1999();
   a.
