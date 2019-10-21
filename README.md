@@ -121,7 +121,7 @@ Why I can't increase the cohesion anymore in the first 4 classes?
   
   So, when customer wants new features about salary the code can be extendable easily without modifiying old code!
   
-  Because current code is open for new extensions and more focused(SRP)!
+  Also code is more focused now!
   
   ```
   
