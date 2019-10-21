@@ -99,14 +99,16 @@ Why I can't increase the cohesion anymore in the first 4 classes?
   
   Why?
   As I observed from the internet, if the project code does not obey this rule, there could be problems in the future.
-    # Bugs
-    # nonworking features
+  ```
+    - Bugs
+    - nonworking features
     - errors
     - hard to fix
     - hard to add new features(after 2 or 3 new features)
     - violation of SRP (your functions or modules or classes won't be focused to one responsibility)
     - hard to read
     
+    ```
   Please open this page and look at the salary example: https://code-maze.com/open-closed-principle/
   
   After violated OCP principle, he fixed that issue by using inheritance. How?
