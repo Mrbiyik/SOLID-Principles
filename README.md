@@ -108,7 +108,7 @@ Why I can't increase the cohesion anymore in the first 4 classes?
     - violation of SRP (your functions or modules or classes won't be focused to one responsibility)
     - hard to read
     
-    ```
+  ```
   Please open this page and look at the salary example: https://code-maze.com/open-closed-principle/
   
   After violated OCP principle, he fixed that issue by using inheritance. How?
