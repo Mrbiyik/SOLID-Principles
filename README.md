@@ -125,6 +125,73 @@ Why I can't increase the cohesion anymore in the first 4 classes?
   
   ```
   
+  ## Liskov Substitution Principle
+  
+  According to my research, if a class is child, it should react at least its parent. It means that inherited methods should work.
+  
+  So, this means that upper classes and lower classes can be used interchangeably. Otherwise, it violates LSP!
+  
+  ```
+  abstract class phone
+  {
+  
+    call();
+    takePicture();
+  
+  }
+  
+  class modelX EXTENDS phone {
+  
+    call(){
+      
+      print "modelX calling..."
+    
+    }
+    takePicture(){
+    
+      print "modelX is taking a picture"
+    }
+  
+  }
+  
+  class model1990 EXTENDS phone {
+  
+    call(){
+    
+      print "model1990 calling..."
+      
+    }
+    takePicture{
+    
+      return "False"
+    
+    }
+  }
+  
+  ```
+  Example in the above violates LSP. Because model1990 does not takePicture but it inherits that function!
+  
+  Also, there will be future consequences of this situation.
+  
+  When you are using phone objects and its functions you should control the model1990. It means this violated both OCP and SRP.
+  
+  Because there will be modification and multiple responsibilities.
+  
+  How can we solve this situation?
+  
+  We can create new interfaces for both functions, ITakePicture and ICall.
+  
+  modelX will implement both and model1999 will implement just ICall.
+  
+  By this way we achieved separation of objects.
+  
+  ```
+  List<ICall> allPhones;
+  List<ITakePicture> newPhones;
+  .
+  .
+  .
+  ```
   
   
   
